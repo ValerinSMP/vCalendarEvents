@@ -1,0 +1,159 @@
+events:
+  keyall:
+    display-name: "<color:#FFD180>ᴋᴇʏ ᴀʟʟ"
+    description:
+      - "<gray>ᴛᴏᴅᴏs ʟᴏs ᴊᴜɢᴀᴅᴏʀᴇs"
+      - "<gray>ʀᴇᴄɪʙɪʀᴀɴ ʟʟᴀᴠᴇs."
+    icon: CYAN_CANDLE
+    schedule:
+      - "19:30" # Every day at 7:30 PM
+    countdown:
+      - 900
+      - 60
+      - 30
+      - 10
+      - 5
+    actions:
+      start:
+        - "[console] crate key giveall vote"
+        - "[console] crate key giveall fire"
+        - "[console] crate key giveall insane"
+        - "[message] <reset>"
+        - "[message] %prefix%<green>¡sᴇ ʜᴀɴ ᴇɴᴛʀᴇɢᴀᴅᴏ ʟʟᴀᴠᴇs ᴀ ᴛᴏᴅᴏs!"
+        - "[title] <color:#FFD180>ᴋᴇʏ ᴀʟʟ;<white>¡ᴅɪsғʀᴜᴛᴀ ᴛᴜs ᴘʀᴇᴍɪᴏs!"
+        - "[message] <reset>"
+        - "[sound] UI_TOAST_CHALLENGE_COMPLETE"
+      countdown_900:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ᴇʟ ᴋᴇʏ ᴀʟʟ ɪɴɪᴄɪᴀ ᴇɴ 15 ᴍɪɴᴜᴛᴏs"
+        - "[message] <reset>"
+        - "[webhook] keyall"
+      countdown:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ᴇʟ ᴇᴠᴇɴᴛᴏ ɪɴɪᴄɪᴀ ᴇɴ %time% sᴇɢᴜɴᴅᴏs"
+        - "[message] <reset>"
+
+  koth_nokeep:
+    display-name: "<color:#FFD180>ᴋᴏᴛʜ (sɪɴ ᴋᴇᴇᴘɪɴᴠ)"
+    icon: OMINOUS_TRIAL_KEY
+    schedule:
+      - "SATURDAY;20:30"
+      - "SUNDAY;20:30"
+    description:
+      - "<gray>ᴇʟ ᴘᴜɴᴛᴏ ᴅᴇ ᴄᴏɴᴛʀᴏʟ"
+      - "<gray>ᴀᴘᴀʀᴇᴄᴇʀᴀ ᴇɴ ᴇʟ ᴍᴀᴘᴀ."
+    countdown:
+      - 1800 # 30m
+      - 900  # 15m
+      - 60   # 1m
+    actions:
+      start:
+        - "[webhook] koth_start"
+      countdown_1800:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ᴇʟ ᴋᴏᴛʜ ɪɴɪᴄɪᴀ ᴇɴ 30 ᴍɪɴᴜᴛᴏs"
+        - "[message] <reset>"
+        - "[webhook] koth_30m"
+      countdown_900:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ᴇʟ ᴋᴏᴛʜ ɪɴɪᴄɪᴀ ᴇɴ 15 ᴍɪɴᴜᴛᴏs"
+        - "[message] <reset>"
+        - "[webhook] koth_15m"
+      countdown:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ᴇʟ ᴋᴏᴛʜ ɪɴɪᴄɪᴀ ᴇɴ %time% sᴇɢᴜɴᴅᴏs"
+        - "[message] <reset>"
+
+  koth_keep:
+    display-name: "<color:#FFD180>ᴋᴏᴛʜ (ᴄᴏɴ ᴋᴇᴇᴘɪɴᴠ)"
+    icon: TRIAL_KEY
+    schedule:
+      - "MONDAY;22:00"
+      - "TUESDAY;22:00"
+      - "WEDNESDAY;22:00"
+      - "THURSDAY;22:00"
+      - "FRIDAY;22:00"
+    description:
+      - "<gray>ᴇʟ ᴘᴜɴᴛᴏ ᴅᴇ ᴄᴏɴᴛʀᴏʟ"
+      - "<gray>ᴀᴘᴀʀᴇᴄᴇʀᴀ ᴇɴ ᴇʟ ᴍᴀᴘᴀ."
+    countdown:
+      - 1800 # 30m
+      - 900  # 15m
+      - 60   # 1m
+    actions:
+      start:
+        - "[webhook] koth_keep_start"
+      countdown_1800:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ᴇʟ ᴋᴏᴛʜ ɪɴɪᴄɪᴀ ᴇɴ 30 ᴍɪɴᴜᴛᴏs"
+        - "[message] <reset>"
+        - "[webhook] koth_keep_30m"
+      countdown_900:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ᴇʟ ᴋᴏᴛʜ ɪɴɪᴄɪᴀ ᴇɴ 15 ᴍɪɴᴜᴛᴏs"
+        - "[message] <reset>"
+        - "[webhook] koth_keep_15m"
+      countdown:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ᴇʟ ᴋᴏᴛʜ ɪɴɪᴄɪᴀ ᴇɴ %time% sᴇɢᴜɴᴅᴏs"
+        - "[message] <reset>"
+
+  megawarden:
+    display-name: "<color:#FFD180>ᴍᴇɢᴀ ᴡᴀʀᴅᴇɴ ʙᴏss"
+    icon: WARDEN_SPAWN_EGG
+    description:
+      - "<gray>ᴇʟ ᴊᴇғᴇ ᴍᴀs ᴘᴏᴅᴇʀᴏsᴏ"
+      - "<gray>ᴅᴇsᴘᴇʀᴛᴀʀᴀ ᴘʀᴏɴᴛᴏ."
+    schedule:
+      - "MONDAY;20:30"
+      - "TUESDAY;20:30"
+      - "WEDNESDAY;20:30"
+      - "THURSDAY;20:30"
+      - "FRIDAY;20:30"
+      - "SATURDAY;18:30"
+      - "SUNDAY;18:30"
+    countdown:
+      - 900 # 15m
+    actions:
+      start:
+        - "[console] ce call mega_warden_start"
+        - "[webhook] megawarden_start"
+      countdown_900:
+        - "[console] ce call mega_warden_open"
+        - "[webhook] megawarden_15m"
+
+  minapvp_safe:
+    display-name: "<green>ᴍɪɴᴀᴘᴠᴘ sᴇɢᴜʀᴀ"
+    icon: MEDIUM_AMETHYST_BUD
+    description:
+      - "<color:#FFD180>● <white>Estado: <green>Seguro"
+      - "<color:#FFD180>● <white>KeepInventory: <green>Activo"
+    schedule:
+      - "14:00"
+    actions:
+      start:
+        - "[message] <reset>"
+        - "[message] %prefix%<green>¡ʟᴀ ᴍɪɴᴀᴘᴠᴘ ᴀʜᴏʀᴀ ᴇs sᴇɢᴜʀᴀ!"
+        - "[message] <reset>"
+        - "[webhook] minapvp_enable"
+        - "[console] mv gamerule set keepInventory true world_minapvp"
+
+  minapvp_unsafe:
+    display-name: "<red>ᴍɪɴᴀᴘᴠᴘ ᴘᴇʟɪɢʀᴏsᴀ"
+    icon: AMETHYST_CLUSTER
+    description:
+      - "<color:#FFD180>● <white>Estado: <red>Peligroso"
+      - "<color:#FFD180>● <white>KeepInventory: <red>Inactivo"
+    schedule:
+      - "20:00"
+    actions:
+      start:
+        - "[message] <reset>"
+        - "[message] %prefix%<red>¡ʟᴀ ᴍɪɴᴀᴘᴠᴘ ᴀʜᴏʀᴀ ᴇs ᴘᴇʟɪɢʀᴏsᴀ!"
+        - "[message] <reset>"
+        - "[webhook] minapvp_disable"
+        - "[console] mv gamerule set keepInventory false world_minapvp"
+
+settings:
+  time-zone: "America/Santiago"
+  debug: false

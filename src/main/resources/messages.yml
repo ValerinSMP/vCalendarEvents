@@ -1,0 +1,34 @@
+# ===========================================
+# MESSAGES - vCalendarEvents
+# ===========================================
+# Format: MiniMessage
+#   <color:#FFD180>text</color> - Hex color
+#   <gray>, <red>, <green>, etc. - Named colors
+#   %prefix% - Auto-replaced with the prefix below
+
+general:
+  prefix: '<dark_gray>[<color:#FFD180>ᴇᴠᴇɴᴛᴏs</color><dark_gray>] '
+  no-permission: '%prefix%<color:#FFD180>No tienes permiso para usar este comando.'
+  player-only: '%prefix%<color:#FFD180>Este comando solo puede ser ejecutado por jugadores.'
+  config-reloaded: '%prefix%<color:#FFD180>¡Configuración recargada!'
+  unknown-command: '%prefix%<red>Comando desconocido.'
+
+commands:
+  help:
+    header:
+      - ' '
+      - '<color:#FFD180> ᴇᴠᴇɴᴛᴏs <gray>»'
+      - ''
+    lines:
+      - ' <gray>- <white>/vevents open <gray>- Abrir calendario'
+      - ' <gray>- <white>/vevents reload <gray>- Recargar configuración'
+    footer:
+      - ''
+
+events:
+  start: '%prefix%<gray>¡El evento <color:#FFD180>%event_displayname% <gray>ha comenzado!'
+  countdown: '%prefix%<gray>El evento <color:#FFD180>%event_displayname% <gray>comienza en <color:#FFD180>%time% <gray>segundos.'
+
+gui:
+  open-error: '%prefix%<red>Error al abrir el menú.'
+  month-view-soon: '%prefix%<gray>Vista mensual próximamente.'

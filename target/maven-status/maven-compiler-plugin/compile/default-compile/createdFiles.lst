@@ -1,0 +1,15 @@
+com\marti\vcalendarevents\webhooks\WebhookManager.class
+com\marti\vcalendarevents\events\Event$EventSchedule.class
+com\marti\vcalendarevents\utils\MessageUtils$Replacer.class
+com\marti\vcalendarevents\config\ConfigManager.class
+com\marti\vcalendarevents\gui\MonthCalendarGUI.class
+com\marti\vcalendarevents\utils\ActionExecutor.class
+com\marti\vcalendarevents\vCalendarEvents.class
+com\marti\vcalendarevents\database\DatabaseManager.class
+com\marti\vcalendarevents\events\EventManager.class
+com\marti\vcalendarevents\gui\CalendarGUI.class
+com\marti\vcalendarevents\events\Event.class
+com\marti\vcalendarevents\events\EventInstance.class
+com\marti\vcalendarevents\papi\EventExpansion.class
+com\marti\vcalendarevents\commands\MainCommand.class
+com\marti\vcalendarevents\utils\MessageUtils.class

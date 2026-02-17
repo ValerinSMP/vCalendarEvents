@@ -1,0 +1,16 @@
+name: vCalendarEvents
+version: "1.0-SNAPSHOT"
+main: com.marti.vcalendarevents.vCalendarEvents
+api-version: "1.21"
+authors: [Antigravity]
+description: Advanced calendar and event scheduling plugin.
+softdepend: [PlaceholderAPI]
+commands:
+  vevents:
+    description: Main command for vCalendarEvents
+    aliases: [calendar, eventos, events, pevents, calendario]
+    usage: /<command> [reload|list|open]
+permissions:
+  vcalendarevents.admin:
+    description: Allows full access to plugin commands
+    default: op

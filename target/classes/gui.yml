@@ -1,0 +1,52 @@
+main_menu:
+  title: "ᴄᴀʟᴇɴᴅᴀʀɪᴏ ᴅᴇ ᴇᴠᴇɴᴛᴏs"
+  rows: 4
+  event_slots: [10, 11, 12, 13, 14, 15, 16] 
+  filler:
+    enabled: true
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    back:
+      slot: 30
+      material: ARROW
+      name: "<red>ᴀɴᴛᴇʀɪᴏʀ"
+      lore:
+        - "<gray>ᴄʟɪᴄ ᴘᴀʀᴀ ᴠᴏʟᴠᴇʀ"
+    close:
+      slot: 31
+      material: BARRIER
+      name: "<red>ᴄᴇʀʀᴀʀ"
+      lore:
+        - "<gray>ᴄʟɪᴄ ᴘᴀʀᴀ sᴀʟɪʀ"
+    month_calendar:
+      slot: 32
+      material: CLOCK
+      name: "<color:#FFD180>ᴠɪsᴛᴀ ᴍᴇɴsᴜᴀʟ"
+      lore:
+        - "<gray>ᴄʟɪᴄ ᴘᴀʀᴀ ᴠᴇʀ ᴇʟ"
+        - "<gray>ᴄᴀʟᴇɴᴅᴀʀɪᴏ <color:#FFD180>ᴍᴇɴsᴜᴀʟ"
+
+month_menu:
+  title: "ᴄᴀʟᴇɴᴅᴀʀɪᴏ ᴅᴇ ᴍᴇs"
+  rows: 6
+  event_slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  filler:
+    enabled: true
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    back:
+      slot: 49
+      material: ARROW
+      name: "<red>ᴀɴᴛᴇʀɪᴏʀ"
+      lore:
+        - "<gray>ᴄʟɪᴄ ᴘᴀʀᴀ ᴠᴏʟᴠᴇʀ"
+
+formatting:
+  daily_event_time: "<gray>ʜᴏʀᴀ: <color:#FFD180>{time}"
+  daily_event_countdown: "<gray>ᴇᴍᴘɪᴇᴢᴀ ᴇɴ: <color:#FFD180>{duration}"
+  month_day_name: "<color:#FFD180>{day} ᴅᴇ {month}"
+  month_day_of_week: "<gray>{day_name}"
+  month_event_item: "<color:#FFD180>● <gray>{time} - <color:#FFD180>{event} <gray>({duration})"
+  no_events: "<gray>ɴᴏ ʜᴀʏ ᴇᴠᴇɴᴛᴏs"
