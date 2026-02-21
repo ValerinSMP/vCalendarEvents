@@ -120,8 +120,14 @@ public class MonthCalendarGUI implements InventoryHolder, Listener {
                         plugin.getLogger().info("Updating day " + dayNum + " for event " + event.getId() + " with icon "
                                 + event.getIcon());
                     }
-                    String time = event.getSchedules().isEmpty() ? "??:??"
-                            : event.getSchedules().get(0).time().format(DateTimeFormatter.ofPattern("HH:mm"));
+                    String time = "??:??";
+                    java.time.DayOfWeek dayOfWeek = dayDate.getDayOfWeek();
+                    for (Event.EventSchedule schedule : event.getSchedules()) {
+                        if (schedule.day() == null || schedule.day() == dayOfWeek) {
+                            time = schedule.time().format(DateTimeFormatter.ofPattern("HH:mm"));
+                            break;
+                        }
+                    }
                     long seconds = plugin.getEventManager().getSecondsUntilEvent(event.getId());
                     String line = eventPattern.replace("{time}", time)
                             .replace("{event}", event.getDisplayName())
