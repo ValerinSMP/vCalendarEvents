@@ -237,3 +237,53 @@ webhooks:
         - "⚔️ ¡Ve a la zona de guerra y domina el punto!"
       color: "#00FF00"
       footer: "vCalendarEvents"
+
+  subastas_15m:
+    url: "https://discord.com/api/webhooks/1442303173971808349/jsa4NGOjL_tjIVpEL4vm6ybugfHdJF7DjwO0yCTeO9-42BWc-uknf-cBkl81SDE8djvh"
+    content: "@Eventos"
+    embed:
+      title: "💰 ¡Subastas Ilegales en aproximación!"
+      description:
+        - "📌 **Evento:** Subastas Ilegales"
+        - "🎮 **Modalidad:** Survival"
+        - ""
+        - "💎 **Mercancía esperada:**"
+        - "• Objetos únicos y valiosos"
+        - "• Spawners raros"
+        - "• Llaves especiales"
+        - ""
+        - "⏰ **Inicio en:** 15 minutos"
+        - ""
+        - "✨ ¡Prepara tu dinero y gana las pujas!"
+      color: "#FFAA00"
+      footer: "vCalendarEvents"
+
+  subastas_5m:
+    url: "https://discord.com/api/webhooks/1442303173971808349/jsa4NGOjL_tjIVpEL4vm6ybugfHdJF7DjwO0yCTeO9-42BWc-uknf-cBkl81SDE8djvh"
+    content: "@Eventos"
+    embed:
+      title: "💰 ¡Las Subastas están a punto de iniciar!"
+      description:
+        - "📌 **Evento:** Subastas Ilegales"
+        - "🎮 **Modalidad:** Survival"
+        - ""
+        - "⚠️ **Aviso:** Solo quedan 5 minutos."
+        - ""
+        - "✨ ¡Conéctate ahora o pierde la oportunidad!"
+      color: "#FFAA00"
+      footer: "vCalendarEvents"
+
+  subastas_start:
+    url: "https://discord.com/api/webhooks/1442303173971808349/jsa4NGOjL_tjIVpEL4vm6ybugfHdJF7DjwO0yCTeO9-42BWc-uknf-cBkl81SDE8djvh"
+    content: "@Eventos"
+    embed:
+      title: "💸 ¡Las Subastas Ilegales han comenzado!"
+      description:
+        - "📌 **Evento:** Subastas Ilegales"
+        - "🎮 **Modalidad:** Survival"
+        - ""
+        - "✅ **Estado:** ¡El mercado negro está abierto!"
+        - ""
+        - "🔨 ¡Que gane el mejor postor!"
+      color: "#FFAA00"
+      footer: "vCalendarEvents"

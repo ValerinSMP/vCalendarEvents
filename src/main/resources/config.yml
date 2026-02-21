@@ -154,6 +154,38 @@ events:
         - "[webhook] minapvp_disable"
         - "[console] mv gamerule set keepInventory false world_minapvp"
 
+  subastas_ilegales:
+    display-name: "<color:#FFD180>sᴜʙᴀsᴛᴀs ɪʟᴇɢᴀʟᴇs"
+    icon: GOLD_INGOT
+    description:
+      - "<gray>sᴜʙᴀsᴛᴀs ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀs"
+      - "<gray>ᴄᴏɴ ɪᴛᴇᴍs ᴠᴀʟɪᴏsᴏs."
+    schedule:
+      - "16:00"
+      - "21:00"
+    countdown:
+      - 900 # 15m
+      - 300 # 5m
+      - 60  # 1m
+    actions:
+      start:
+        - "[console] auc start all" # Asumiendo comando generico, ajustar segun plugin real
+        - "[webhook] subastas_start"
+      countdown_900:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ʟᴀs sᴜʙᴀsᴛᴀs ɪʟᴇɢᴀʟᴇs ɪɴɪᴄɪᴀɴ ᴇɴ 15 ᴍɪɴᴜᴛᴏs"
+        - "[message] <reset>"
+        - "[webhook] subastas_15m"
+      countdown_300:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ʟᴀs sᴜʙᴀsᴛᴀs ɪʟᴇɢᴀʟᴇs ɪɴɪᴄɪᴀɴ ᴇɴ 5 ᴍɪɴᴜᴛᴏs"
+        - "[message] <reset>"
+        - "[webhook] subastas_5m"
+      countdown:
+        - "[message] <reset>"
+        - "[message] %prefix%<yellow>ʟᴀs sᴜʙᴀsᴛᴀs ɪʟᴇɢᴀʟᴇs ɪɴɪᴄɪᴀɴ ᴇɴ %time% sᴇɢᴜɴᴅᴏs"
+        - "[message] <reset>"
+
 settings:
   time-zone: "America/Santiago"
   debug: false
